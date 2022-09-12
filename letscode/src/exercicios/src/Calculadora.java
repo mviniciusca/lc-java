@@ -1,5 +1,3 @@
-package exercicios.src;
-
 /**
  * Escreva um programa que informa a tabuada de multiplicação de um número
  * informado pelo

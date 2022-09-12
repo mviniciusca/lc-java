@@ -1,5 +1,3 @@
-package exercicios.src;
-
 /**
  * Escreva um programa que converte temperaturas de Celsius para Fahrenheit.
  * Fórmula (0 °C ×
