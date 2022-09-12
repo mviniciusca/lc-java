@@ -1,3 +1,5 @@
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * Considere um aplicativo para solicitar sua feira de frutas. Você define a
@@ -19,28 +21,35 @@
  */
 public class ListaFrutas {
     public static void main(String[] args) {
+        // Definindo o Local
+        Locale ptBr = new Locale("pt", "br");
 
         // Definindo a Lista
-        String[] frutasDesejadas = { "Maçã", "Uva", "Banana", "Morango", "Abacaxi", "Pêra" };
-        String[] frutasCompradas = { "Maçã", "Uva" };
+        String[] frutasDesejadas = { "Maçã", "Uva", "Banana", "Morango", "Pera", "Jaca", "Limão" };
+        String[] frutasCompradas = { "Maçã", "Uva", "Banana" };
 
         // calculando a porcentagem
         int porcentagem = (frutasCompradas.length * 100) / frutasDesejadas.length;
 
         // calculando a gorjeta
-        int gorjeta = 0;
+        double gorjeta = 0;
 
-        if (porcentagem <= 50) {
+        if (porcentagem >= 50 && porcentagem < 75) {
             gorjeta = 3;
-        } else if (porcentagem <= 75) {
+        } else if (porcentagem >= 75 && porcentagem < 90) {
             gorjeta = 5;
-        } else if (porcentagem <= 90) {
+        } else if (porcentagem >= 90) {
             gorjeta = 10;
         } else {
             gorjeta = 0;
         }
 
-        System.out.println(porcentagem + "% de frutas compradas!" + "Sua gorjeta é de R$ " + gorjeta);
+        // Trasnformando o valor da gorjeta
+        String valorGorjeta = NumberFormat.getCurrencyInstance(ptBr).format(gorjeta);
+
+        // Exibindo
+        System.out.println("Correspondência de " + porcentagem + "%, gorjeta de " + valorGorjeta + " reais");
+
     }
 
 }
