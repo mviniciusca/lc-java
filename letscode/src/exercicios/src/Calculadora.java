@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Escreva um programa que informa a tabuada de multiplicação de um número
  * informado pelo
@@ -12,7 +14,10 @@
 
 public class Calculadora {
     public static void main(String[] args) {
-        calculadora(3);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Entre com um número de 1 a 10");
+            calculadora(input.nextInt());
+        }
     }
 
     public static void calculadora(int number) {
@@ -26,7 +31,6 @@ public class Calculadora {
         } else {
             System.out.println("Número fora do parâmetro, por favor, digite um número de 1 a 10");
         }
-
     }
 
 }
