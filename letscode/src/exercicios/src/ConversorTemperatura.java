@@ -1,3 +1,7 @@
+import java.util.Scanner;
+
+import javax.sound.sampled.SourceDataLine;
+
 /**
  * Escreva um programa que converte temperaturas de Celsius para Fahrenheit.
  * Fórmula (0 °C × 9/5) + 32 = 32 °F. Exemplo:
@@ -9,7 +13,10 @@
 
 public class ConversorTemperatura {
     public static void main(String[] args) {
-        conversor(22);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Digite a temperatura em Celsius");
+            conversor(input.nextDouble());
+        }
     }
 
     public static void conversor(double temperature) {
