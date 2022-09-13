@@ -19,22 +19,23 @@ public class ListagemFrutas {
         System.out.println("Bem-vindo ao Hotifruti Java");
         String[] frutasPromocao = { "banana", "maçã", "abacaxi", "melão", "mamão" };
         System.out.println("Qual fruta você quer comprar hoje?");
-        Scanner input = new Scanner(System.in);
-        String frutaCompra = input.nextLine();
-        boolean frutaPromocao = false;
+        try (Scanner input = new Scanner(System.in)) {
+            String frutaCompra = input.nextLine();
+            boolean frutaPromocao = false;
 
-        for (String fruta : frutasPromocao) {
+            for (String fruta : frutasPromocao) {
 
-            if (fruta.equalsIgnoreCase(frutaCompra)) {
-                frutaPromocao = true;
-                break;
+                if (fruta.equalsIgnoreCase(frutaCompra)) {
+                    frutaPromocao = true;
+                    break;
+                }
+
             }
-
-        }
-        if (frutaPromocao) {
-            System.out.println("Fruta está em promoção hoje!");
-        } else {
-            System.out.println("A fruta não está em promoção hoje!");
+            if (frutaPromocao) {
+                System.out.println("Fruta está em promoção hoje!");
+            } else {
+                System.out.println("A fruta não está em promoção hoje!");
+            }
         }
     }
 
