@@ -21,7 +21,7 @@ public class ConversorTemperatura {
 
     public static void conversor(double temperature) {
 
-        double formula = (temperature * 9 / 5) + 32;
+        double formula = (temperature * 9.0 / 5.0) + 32; // converter para double
 
         String result = Double.toString(formula).replace(".", ",");
         System.out.println("O equivalente a " + temperature + " C é " + result + " F");
