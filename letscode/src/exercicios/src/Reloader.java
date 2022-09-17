@@ -5,10 +5,11 @@ public class Reloader {
         int t = 1;
         int m = 5;
         int c = 10;
+        c = c * (1 + t);
 
-        while (t <= m) {
-            c = c * (1 + t);
+        while (t < m) {
             t++;
+            c = c * (1 + t);
         }
         System.out.println(c);
     }
