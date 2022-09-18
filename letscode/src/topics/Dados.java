@@ -1,4 +1,8 @@
-package topics;
+
+/**
+ * Manipulação de Dados
+ * O Java oferece diversos métodos para manipulação dos dados em geral.
+ */
 
 import java.time.LocalDateTime;
 import java.time.LocalDate;

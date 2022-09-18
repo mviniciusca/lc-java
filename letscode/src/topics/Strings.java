@@ -1,4 +1,3 @@
-package topics;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

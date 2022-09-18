@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ShoppingCart",
+      "request": "launch",
+      "mainClass": "ShoppingCart",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch CarrinhoFrutas",
+      "request": "launch",
+      "mainClass": "CarrinhoFrutas",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "mainClass": "topics.App",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch Bank",
+      "request": "launch",
+      "mainClass": "Bank",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch Reloader",
+      "request": "launch",
+      "mainClass": "Reloader",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
       "name": "Launch TrocaValores",
       "request": "launch",
       "mainClass": "TrocaValores",
