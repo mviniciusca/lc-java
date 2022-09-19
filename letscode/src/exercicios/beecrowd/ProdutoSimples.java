@@ -26,7 +26,7 @@ public class ProdutoSimples {
         int PROD = A * B;
 
         System.out.printf("PROD = %s\n", PROD);
-
+        sc.close();
     }
 
 }

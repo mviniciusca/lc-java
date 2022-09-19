@@ -26,7 +26,7 @@ public class SomaSimples {
         int soma = A + B;
 
         System.out.printf("SOMA = %s\n", soma);
-
+        sc.close();
     }
 
 }
