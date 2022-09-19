@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch UdemyFive",
+      "request": "launch",
+      "mainClass": "UdemyFive",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch UdemyThree",
+      "request": "launch",
+      "mainClass": "UdemyThree",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch UdemyTwo",
+      "request": "launch",
+      "mainClass": "UdemyTwo",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch UdemyOne",
+      "request": "launch",
+      "mainClass": "UdemyOne",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
       "name": "Launch ShoppingCart",
       "request": "launch",
       "mainClass": "ShoppingCart",
