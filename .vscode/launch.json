@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Matriz",
+      "request": "launch",
+      "mainClass": "matrizes.Matriz",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch NumberPair",
+      "request": "launch",
+      "mainClass": "NumberPair",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
       "name": "Launch ExchangeApp",
       "request": "launch",
       "mainClass": "ExchangeApp",
