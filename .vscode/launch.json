@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ExchangeApp",
+      "request": "launch",
+      "mainClass": "ExchangeApp",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
+      "name": "Launch Regressive",
+      "request": "launch",
+      "mainClass": "Regressive",
+      "projectName": "java_dabec036"
+    },
+    {
+      "type": "java",
       "name": "Launch List",
       "request": "launch",
       "mainClass": "List",
