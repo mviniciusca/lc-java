@@ -12,6 +12,7 @@ public class Matriz {
 
         double[][] mat; // inicialização
         mat = new double[3][4]; // declaração
+        System.out.println(mat[0][1]); // exibindo
 
         /**
          * Saída do exemplo acima:
